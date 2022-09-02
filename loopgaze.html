@@ -9,11 +9,17 @@
         </style> 
         <script type='text/javascript'> 
             $(function(){
-                $("body").height($(window).height() + 4500 );　$(window).scroll(function() {
+                $("body").height($(window).height() + 4500 );
+                $(window).scroll(function() {
                     if 
-                        ($(window).scrollTop() >= ($("body").height() - $(window).height())) {　$(window).scrollTop(1);}
-                    else if 
-                        ($(window).scrollTop() == 0) {　$(window).scrollTop($("body").height() - $(window).height() - 1);}
+                        ($(window).scrollTop() >= ($("body").height() - $(window).height()))
+                            {
+                                $(window).scrollTop(1);
+                            }
+                        else if 
+                            ($(window).scrollTop() == 0) {
+                                $(window).scrollTop($("body").height() - $(window).height() - 1);
+                            }
                 });
             });
         </script> 
