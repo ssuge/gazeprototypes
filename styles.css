@@ -1,0 +1,130 @@
+@charset 'UTF-8';
+
+/*
+ * commons
+ */
+* {
+}
+html, body{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  font-size: 12px;
+  font-family: "Lucida Grande", Arial, Helvetica, "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+  font-weight: 500;
+  color: #222222;
+  vertical-align: baseline;
+  background: #ffffff;
+}
+a,
+a:visited {
+  color: #999999;
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  color: #222222;
+  text-decoration: none;
+  border-bottom: 4px solid black;
+}
+a img,
+a:link img,
+a:hover img,
+a:visited img {
+  border: none;
+  text-decolation: none;
+  border-bottom: 0px solid white;
+}
+h1 {
+  font-size: 180%;
+  font-weight: 100;
+}
+h2 {
+  font-size: 140%;
+  font-weight: 200;
+}
+h3 {
+  font-size: 120%;
+  font-weight: 200;
+}
+hr {
+  border-color: #222222;
+  border-width: 1px;
+  border-style: solid;
+}
+.clearfix:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;
+}
+.clearfix {display: inline-table;}
+/* \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* */
+
+/*
+ * layout
+ */
+#wrapper {
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -100px auto;
+  width: 680px;
+}
+
+/* footer */
+#footer {
+  position: relative;
+  height: 60px;
+  margin: 0 auto;
+  width: 680px;
+  padding: 0px 0;
+  overflow: hidden;
+}
+#footer-push {
+  clear: both;
+  height: 100px;
+}
+#footer ul {
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+}
+#footer ul li {
+  display: inline;
+  margin-right: 10px;
+}
+#footer .footnote {
+  font-size: 80%;
+  color: #666;
+}
+
+/* page */
+#page {
+  margin: 0;
+  padding: 20px 0;
+}
+#page .annotation {
+  font-size: 80%;
+  color: #ddd;
+  font-weight: lighter;
+}
+#page p {
+  margin: 20px 0;
+}
+#page ol {
+  margin-left: 0;
+  list-style: decimal;
+}
+#page ul {
+  margin-left: 0;
+  list-style: square;
+}
