@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <title>loopgaze</title> <meta name='robots' content='noindex,nofollow' />
+        <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.js'></script>
+        <style type='text/css'>
+            body {
+                height: 4500px;
+                width: 1620px;
+                background: url("https://i.gyazo.com/76e3ef2a2de59247ec4b216458aa32c2.png") ;
+                }
+        </style> 
+        <script type='text/javascript'> 
+            $(function(){
+                $("body").height($(window).height() + 4500 );　$(window).scroll(function() {
+                    if 
+                        ($(window).scrollTop() >= ($("body").height() - $(window).height())) {　$(window).scrollTop(1);}
+                    else if 
+                        ($(window).scrollTop() == 0) {　$(window).scrollTop($("body").height() - $(window).height() - 1);}
+                });
+            });
+        </script> 
+</head> 
+<body id="endless">
+
+</body>
+</html>
